@@ -1,11 +1,10 @@
 from PIL import Image
-import os, sys
 
-inputImgName = sys.argv[1]
+inputImgName = "대표1000.jpg"
 size1 = (700,700)
 size2 = (640,640)
-size1Name = inputImgName.replace(".jpg","")+"700.jpg"
-size2Name = inputImgName.replace(".jpg","")+"640.jpg"
+size1Name = "대표700.jpg"
+size2Name = "대표640.jpg"
 
 inputImg = Image.open(inputImgName)
 
