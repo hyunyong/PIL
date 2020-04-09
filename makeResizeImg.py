@@ -8,8 +8,8 @@ size2Name = "대표640.jpg"
 
 inputImg = Image.open(inputImgName)
 
-size1Img = inputImg.resize(size1)
-size2Img = inputImg.resize(size2)
+size1Img = inputImg.resize(size1, Image.ANTIALIAS)
+size2Img = inputImg.resize(size2, Image.ANTIALIAS)
 
-size1Img.save(size1Name, quality=95)
-size2Img.save(size2Name, quality=95)
+size1Img.save(size1Name, quality=100)
+size2Img.save(size2Name, quality=100)
